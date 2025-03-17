@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #171818;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+}

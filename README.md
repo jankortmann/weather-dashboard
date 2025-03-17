@@ -12,7 +12,7 @@ A modern, server-side rendered weather dashboard built with **Next.js**, **TypeS
 - **GitHub Repository:** [jankortmann/weather-dashboard](https://github.com/jankortmann/weather-dashboard)
 
 ## Features
-- **Real-Time Weather Data:** Fetches curretn weather data using the OpenWeatherMap API.
+- **Real-Time Weather Data:** Fetches current weather data using the OpenWeatherMap API.
 - **Min/Max Temperatures:** Displays rounded minimum and maximum temeperatures for the current day.
 - **Dark/Light Mode:** Supports system preference-based theme switching.
 - **Multi Localization:** Supports English, German, Spanish, French, and Mandarin.

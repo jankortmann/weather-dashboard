@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Weather Dashboard 🌦️
+
+A server-side rendered weather dashboard with **Next.js**, **TypeScript**, and **SCSS**
+
+![Weather Dashboard Screenshot](./readme/showcase.gif)
+
+
+A modern, server-side rendered weather dashboard built with **Next.js**, **TypeScript**, and **SCSS**, integrating the **OpenWeatherMap API** to display real-time weather data, including rounded min/max temperatures. The app features a dark/light mode toggle based on system preferences, input sanitization for security, and is deployed on Vercel.
+
+## Live Demo
+- **Demo:** [Weather Dashboard on Vercel](https://weather-dashboard-3nun49p8h-jan-kortmanns-projects.vercel.app/)
+- **GitHub Repository:** [jankortmann/weather-dashboard](https://github.com/jankortmann/weather-dashboard)
+
+## Features
+- **Real-Time Weather Data:** Fetches curretn weather data using the OpenWeatherMap API.
+- **Min/Max Temperatures:** Displays rounded minimum and maximum temeperatures for the current day.
+- **Dark/Light Mode:** Supports system preference-based theme switching.
+- **Multi Localization:** Supports English, German, Spanish, French, and Mandarin.
+- **Responsive Design:** Styled with SCSS for a UI that works on Mobile, Desktop, and Ultrawide Viewports.
+- **Security:** Implemented input sanitization, rate limiting on API routes, and security headers.
+- **Performance:** Achieves a Lighthouse score of 90+ for perofrmance, accessibility, and SEO.
+
+## 🛠️ Tech Stack
+- **Framework:** Next.js (Application Router)
+- **Language:** TypeScript
+- **Styling:** SCSS (with CSS Modules)
+- **API:** OpenWeatherMap API
+- **Deployment:** Vercel
+- **Security:** Custom security headers, rate limiting, and environment variable management
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js (v18.x recommended)
+- npm or yarn
+- An OpenWeatherMap API key (sign up at [openweathermap.org](https://openweathermap.org))
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Installation
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/jankortmann/weather-dashboard.git
+    cd weather-dashboard
+2. Install dependencies:
+    ```bash
+    npm install
+3. Create a .env.local file in the root directory and add your OpenWeatherMap API key:
+    ```bash
+    OPENWEATHERMAP_API_KEY=api_key_here
+4. Run the dev server:
+    ```bash
+    npm run dev
+5. Open http://localhost:3000 in your browser to see the app.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Future Improvements
+- Adding a live weather Map.
+- Weather forecasting.
+- More Languages.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Author
+**Jan Kortmann**
+GitHub: jankortmann
+Email: jan@jankortmann.com
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with ❤️ using Next.js.

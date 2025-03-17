@@ -1,22 +1,3 @@
-:root {
-    --accent: #F24C4F;
-    --gray-1: #2C2E2E;
-    --gray-2: #818181;
-    --gray-3: #202121;
-    --white: #FFFFFF;
-}
-
-@font-face {
-    font-family: "Onest Bold";
-    src: url("/fonts/Onest-Bold.ttf");
-}
-
-@font-face {
-    font-family: "Urbanist SemiBold";
-    src: url("/fonts/Urbanist-SemiBold.ttf");
-}
-
-
 .container {
     max-width: 100%;
     margin: 0 auto;

@@ -2,12 +2,7 @@
 
 import { useState } from 'react';
 import styles from '../Home.module.scss'
-
-interface WeatherData {
-    name: string;
-    main: { temp: number };
-    weather: { description: string; icon: string}[];
-}
+import { WeatherData } from '../types/weather';
 
 export default function WeatherForm({ initialWeather }: { initialWeather: WeatherData | null }) {
     const [city, setCity] = useState('');

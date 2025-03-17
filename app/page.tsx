@@ -1,10 +1,5 @@
 import WeatherForm from './components/WeatherForm';
-
-interface WeatherData {
-  name: string;
-  main: { temp: number };
-  weather: { description: string; icon: string }[];
-}
+import { WeatherData } from './types/weather';
 
 async function fetchWeather(city: string): Promise<WeatherData | null> {
   const apiKey = process.env.OPENWEATHERMAP_API_KEY;

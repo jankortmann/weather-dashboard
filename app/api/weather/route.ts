@@ -1,18 +1,5 @@
 import { NextResponse } from 'next/server';
-
-type WeatherData = {
-    name: string;
-    main: { 
-        temp: number 
-        temp_min: number
-        temp_max: number
-        pressure: number
-        humidity: number
-        feels_like: number
-    };
-    weather: { description: string; icon: string }[];
-    wind: { speed: number };
-}
+import { WeatherData } from '../../types/weather';
 
 export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);

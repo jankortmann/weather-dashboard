@@ -27,3 +27,14 @@ body {
     font-family: Arial, sans-serif;
     background-color: var(--background);
 }
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --accent: #F24C4F;
+        --gray-1: #F2E2BF;
+        --gray-2: #202121;
+        --gray-3: #E6CE9B;
+        --white: #202121;
+        --background: #FFF7E3;
+    }
+}
